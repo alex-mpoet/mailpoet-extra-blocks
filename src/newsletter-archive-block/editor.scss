@@ -1,0 +1,22 @@
+/**
+ * The following styles get applied inside the editor only.
+ */
+
+.wp-block-mailpoet-newsletter-archive-block-settings {
+
+	.date-picker-with-text-input {
+		position: relative;
+		margin-bottom: 16px;
+	}
+
+	.clear-button {
+		position: absolute;
+		right: 0;
+		top: 41px;
+		transform: translateY(-50%);
+		background: none;
+		border: none;
+		cursor: pointer;
+		font-weight: bold;
+	}
+}

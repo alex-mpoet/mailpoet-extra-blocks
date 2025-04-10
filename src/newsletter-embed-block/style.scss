@@ -1,0 +1,11 @@
+/**
+ * The following styles get applied both on the front and in the editor.
+ */
+
+.wp-block-mailpoet-newsletter-embed-block {
+
+	.iframe-container iframe {
+		border: none;
+		width: 100%;
+	}
+}

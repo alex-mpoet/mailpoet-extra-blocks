@@ -1,0 +1,34 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "mailpoet/newsletter-embed-block",
+	"version": "0.1.0",
+	"title": "MailPoet Newsletter Embed",
+	"category": "widgets",
+	"icon": "email-alt",
+	"description": "Display a MailPoet newsletter.",
+	"example": {},
+	"attributes": {
+		"newsletterId": {
+			"type": "number",
+			"default": null
+		},
+		"newsletterSubject": {
+			"type": "string",
+			"default": null
+		},
+		"previewUrl": {
+			"type": "string",
+			"default": null
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "mailpoet-extra-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

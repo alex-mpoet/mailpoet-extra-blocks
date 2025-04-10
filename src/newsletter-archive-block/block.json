@@ -1,0 +1,45 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "mailpoet/newsletter-archive-block",
+	"version": "0.1.0",
+	"title": "MailPoet Newsletter Archive",
+	"category": "widgets",
+	"icon": "archive",
+	"description": "Display MailPoet newsletter archives.",
+	"example": {},
+	"attributes": {
+		"segments": {
+			"type": "array"
+		},
+		"inTheLastDays": {
+			"type": "number"
+		},
+		"startDate": {
+			"type": "string"
+		},
+		"endDate": {
+			"type": "string"
+		},
+		"subjectContains": {
+			"type": "string"
+		},
+		"limit": {
+			"type": "number"
+		}
+	},
+	"supports": {
+		"color": {
+			"text": true,
+			"link": true
+		},
+		"html": false,
+		"typography": {
+			"fontSize": true
+		}
+	},
+	"textdomain": "mailpoet-extra-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php"
+}

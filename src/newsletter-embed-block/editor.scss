@@ -1,0 +1,24 @@
+/**
+ * The following styles get applied inside the editor only.
+ */
+
+.wp-block-mailpoet-newsletter-embed-block {
+
+	.spinner-container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -9px;
+		margin-left: -9px;
+	}
+
+	.iframe-container {
+		&.iframe-container-loading {
+			opacity: 0.3;
+		}
+
+		iframe {
+			pointer-events: none;
+		}
+	}
+}
